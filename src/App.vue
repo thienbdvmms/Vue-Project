@@ -1,27 +1,16 @@
-<template>
-  <h1>
-    Config Router
-  </h1>
-  <router-view></router-view>
-</template>
-
 <script>
-
+import Header from './components/HeaderPage.vue'
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    Header
   }
 }
 </script>
+<template>
+  <Header></Header>
+  <router-view></router-view>
+</template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
+<style></style>
